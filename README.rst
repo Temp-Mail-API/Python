@@ -35,6 +35,9 @@ Generate email address and get emails from it::
     from tempmail import TempMail
 
     tm = TempMail()
+    api_host = 'privatix-temp-mail-v1.p.rapidapi.com'
+    api_key='place_your_key_here'
+    tm.set_header(api_host,api_key)
     email = tm.get_email_address()  # v5gwnrnk7f@gnail.pw
     print tm.get_mailbox(email)  # list of emails
 
